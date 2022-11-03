@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "null"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "linkUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "linkUrl"
+      ]
+    },
+    "serverTime": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "code",
+    "message",
+    "errors",
+    "data",
+    "serverTime"
+  ]
+}
