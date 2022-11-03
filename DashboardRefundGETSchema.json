@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "refunds": {
+          "type": "array",
+          "items": [
+            {
+              "required": [
+                "id",
+                "contact",
+                "order",
+                "requestHash",
+                "additionalInfo",
+                "additionalReferenceIds",
+                "reason",
+                "requestRemark",
+                "refundOptionKey",
+                "requestedAt",
+                "deeplinkExpiredAt",
+                "paymentMethodSubmittedAt",
+                "items",
+                "status",
+                "paymentMethods",
+                "amountDetails",
+                "currency",
+                "vertical",
+                "requestType",
+                "resellerType",
+                "actualRefundAmount",
+                "paymentManifest",
+                "createdAt",
+                "updatedAt",
+                "createdBy",
+                "updatedBy",
+                "lastStatus",
+                "lastStatusLabel",
+                "rejectedReason",
+                "rejectedLabel",
+                "totalAmount",
+                "totalAmountFromVendor",
+                "chooseItem",
+                "isAutomated",
+                "automationCommand",
+                "lastShownStatus",
+                "accountDeactivatedAt",
+                "TotalUniqueCode",
+                "TotalExtraFee",
+                "IsExtraFeeNotExist",
+                "IsUniqueCodeNotExist",
+                "IsValidSSRR",
+                "IsForceToBankTransfer"
+              ]
+            }
+          ]
+        },
+        "count": {
+          "type": "integer"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "size": {
+          "type": "integer"
+        },
+        "totalPage": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "refunds",
+        "count",
+        "page",
+        "size",
+        "totalPage"
+      ]
+    },
+    "serverTime": {
+      "type": "integer"
+    },
+    "requestId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "data",
+    "serverTime",
+    "requestId"
+  ]
+}
